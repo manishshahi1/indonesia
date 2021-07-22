@@ -23,7 +23,7 @@ let date = year + "-" + month + "-" + date;
 obj.users.push({username: ctx.chat.username, date:date});
 
 var json = JSON.stringify(obj);
-fs.writeFile('db/users.json', json, 'utf8', callback);
+fs.writeFile('users.json', json, 'utf8', callback);
 
 
 
@@ -56,7 +56,7 @@ let date = year + "-" + month + "-" + date;
 obj.users.push({username: ctx.chat.username, date:date});
 
 var json = JSON.stringify(obj);
-fs.writeFile('db/users.json', json, 'utf8', callback);
+fs.writeFile('users.json', json, 'utf8', callback);
 
 
         const messages = [
@@ -84,7 +84,7 @@ let date = year + "-" + month + "-" + date;
 obj.users.push({username: ctx.chat.username, date:date});
 
 var json = JSON.stringify(obj);
-fs.writeFile('db/users.json', json, 'utf8', callback);
+fs.writeFile('users.json', json, 'utf8', callback);
 
 
     const messages = [
