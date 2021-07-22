@@ -5,7 +5,7 @@ const expressApp = express();
 
 const API_TOKEN = process.env.API_TOKEN || "1927798018:AAG1ouBolsoRgOa-ZnqMKZ4PS_1BAEbBvTA";
 const PORT = process.env.PORT || 3000;
-const URL = process.env.URL || "https://introbot-ai.herokuapp.com";
+const URL = process.env.URL || "https://introbot-indonesia.herokuapp.com/";
 const bot = new Telegraf(API_TOKEN);
 
 //method for invoking start command
