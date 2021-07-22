@@ -1,0 +1,20 @@
+{
+  "name": "mybot",
+  "version": "1.0.0",
+  "description": "Official chat bot for IntroBot AI",
+  "main": "indonesia-bot.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node indonesia-bot.js"
+  },
+  "author": "Manish Shahi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "telegraf": "^4.4.0"
+  },
+  "engines": {
+    "node": "14.17.2"
+  }
+}
