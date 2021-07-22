@@ -67,7 +67,6 @@ bot.hears(/Covid|covid|COVID/, async (ctx, next) => {
     }
 });
 
-bot.telegram.setWebhook(`${URL}/bot${API_TOKEN}`);
 expressApp.get("/", (req, res) => {
     res.send("Welcome to Introbot Indonesia");
 });
