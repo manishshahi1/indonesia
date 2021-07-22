@@ -1,6 +1,5 @@
 import { Telegraf } from "telegraf";
 import express  from "express";
-import fs from "fs";
 const expressApp = express();
 
 const API_TOKEN = process.env.API_TOKEN || "1927798018:AAG1ouBolsoRgOa-ZnqMKZ4PS_1BAEbBvTA";
