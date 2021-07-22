@@ -14,19 +14,6 @@ expressApp.use(bot.webhookCallback(`/telebot/`));
 
 //save data
 
-//saving users
-var obj = {
-    users: []
- };
-let date = year + "-" + month + "-" + date;
-
-obj.users.push({username: ctx.chat.username, date:date});
-
-var json = JSON.stringify(obj);
-fs.writeFile('users.json', json, 'utf8', callback);
-
-
-
 //messages
 bot.command("start", async (ctx, next) => {
     console.log(ctx.from);
@@ -47,16 +34,7 @@ bot.hears(
     /Hai Introbot!|hai|hai!|Hai!|Hai|Halo|Membantu|Bot|Bot!|hai|halo|hai/,
     async (ctx, next) => {
         console.log(ctx.from);
-//saving users
-var obj = {
-    users: []
- };
-let date = year + "-" + month + "-" + date;
 
-obj.users.push({username: ctx.chat.username, date:date});
-
-var json = JSON.stringify(obj);
-fs.writeFile('users.json', json, 'utf8', callback);
 
 
         const messages = [
@@ -75,16 +53,6 @@ fs.writeFile('users.json', json, 'utf8', callback);
 
 bot.hears(/Covid|covid|COVID/, async (ctx, next) => {
     console.log(ctx.from);
-//saving users
-var obj = {
-    users: []
- };
-let date = year + "-" + month + "-" + date;
-
-obj.users.push({username: ctx.chat.username, date:date});
-
-var json = JSON.stringify(obj);
-fs.writeFile('users.json', json, 'utf8', callback);
 
 
     const messages = [
